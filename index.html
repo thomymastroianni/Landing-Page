@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVBAR</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body class="container">
-    <HEADER>
+    <header>
         <div class="navbar">
-            <img src="./LOGO2.png" class="logo" alt="logo">
+            <img src="./images/LOGO2.png" class="logo" alt="logo">
             <div>
-                 <ul>
-                 <li><a class="letra" href="">INICIO</a></li>
-                 <li><a class="letra" href="">PRODUCTOS</a></li>
-                 <li><a class="letra" href="">TAKE AWAY</a></li>
-                 <li><a class="letra" href="">CONTACTANOS</a></li>
-                 </ul>
+                <ul>
+                    <li><a class="letra" href="index.html">INICIO</a></li>
+                    <li><a class="letra" href="./pages/products.html">PRODUCTOS</a></li>
+                    <li><a class="letra" href="./pages/takeaway.html">TAKE AWAY</a></li>
+                    <li><a class="letra" href="./pages/contacts.html">CONTACTANOS</a></li>
+                </ul>
             </div>
         </div>
-    </HEADER>
+    </header>
     <main>
         <section>
             <div class="section1">
@@ -30,26 +31,28 @@
                     <br>
                     <h3 id="warning">¡WARNING!</h3>
                     <br>
-                    <p class="parrafo">Abandonar urgente esta página antes de probar nuestras hamburguesas y hacerte cliente fijo.</p>
+                    <p class="parrafo">Abandonar urgente esta página antes de probar nuestras hamburguesas y hacerte
+                        cliente fijo.</p>
                     <p class="parrafo">Este es un lugar donde además de disfrutar, se comparte una pasión.</p>
                     <br>
                     <div class="button">
-                        <button id="boton">¡QUIERO MORIR!</button>
+                        <button onclick="document.location='./pages/products.html'" id="boton">¡QUIERO MORIR!</button>
                     </div>
                     <br>
                     <br>
                     <h4 class="titulo">Nuestro origen</h4>
                     <br>
-                    <p class="parrafo">Surge en el fondo de una casa en el barrio bonaerense de Jose Leon Suarez, por el año 2022 cuando
-                    la crisis
-                    <br>
-                     de Argentina cada vez, golpeaba mas fuerte, y el mas fuerte tenía que reinventarse.
-                     <br>
-                     Comenzando desde unas simples ventas a familiares, hasta convertirse
-                     
-                     en la pesadilla para los Arcos Dorados.
+                    <p class="parrafo">Surge en el fondo de una casa en el barrio bonaerense de Jose Leon Suarez, por el
+                        año 2022 cuando
+                        la crisis
+                        <br>
+                        de Argentina cada vez, golpeaba mas fuerte, y el mas fuerte tenía que reinventarse.
+                        <br>
+                        Comenzando desde unas simples ventas a familiares, hasta convertirse
+
+                        en la pesadilla para los Arcos Dorados.
                     </p>
-                    <br> 
+                    <br>
                     <br>
                     <br>
                     <h3 id="warning">
@@ -62,14 +65,69 @@
                     </p>
                 </div>
                 <div class="aside">
-                    <img class="fotoaside" src="Mundo-2.png" alt="foto de bob esponja">
+                    <img class="fotoaside" src="./images/Mundo-2.png" alt="foto de bob esponja">
                     <p>Nunca revelaremos nuestra fórmula secreta.</p>
                 </div>
-                
+
             </div>
-
-
+        </section>
+        <br>
+        <br>
+        <section class="section22">
+            <h2>PORQUE ELEGIRNOS?</h2>
+            <br>
+            <div class="section2">
+                <div class="pk">
+                    <h4>PORQUE TENEMOS EL MEJOR PAN DE PAPA DEL MERCADO GRACIAS A SU INGREDIENTE SECRETO!</h4>
+                    <img class="fotosection2" src="./images/thumb02-1-1.png" alt="pan de papa">
+                </div>
+                <div class="pk">
+                    <h4>PORQUE PODES ELEGIR TU PUNTO DE COCCIÓN!</h4>
+                    <img class="fotosection2" src="./images/El-punto-back.png" alt="punto de cocción">
+                </div>
+                <div class="pk">
+                    <h4>Y PORQUE PENSAMOS EN TODOS Y TENEMOS NUESTRO MENÚ VEGGIE!</h4>
+                    <img class="fotosection2" src="./images/Hamburguesa-vegetariana.png" alt="hamburguesa vegana">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h3 class="slogan">Te vengo a convencer..</h3>
+            <br>
+            <br>
+            <div class="section33">
+                <div class="card">
+                    <img src="./images/carne-magra.png" alt="carne-magra">
+                    <h4>Carne de calidad</h4>
+                    <p>Tenemos el privilegio de seleccionar nuestras carnes</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="card">
+                    <img src="./images/limpieza.png" alt="limpieza">
+                    <h4>Estricto orden y limpieza</h4>
+                    <p>La limpieza y el orden en la cocina es nuestra mayor virtud</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="card">
+                    <img src="./images/christophe-masterchef3.png" alt="christophe-masterchef3">
+                    <h4>Cocineros de lujo</h4>
+                    <p>Te vas a perder de comer una hamburguesa de este tipo?</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div class="card">
+                    <img src="./images/productofinal.png" alt="productofinal">
+                    <h4>Le tenes miedo al éxito?</h4>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <p>Muchisimas gracias por llegar hasta el final.</p>
+            <p id="mastro">Mastroianni S.A</p>
+        </div>
+    </footer>
 </body>
+
 </html>
