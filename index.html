@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVBAR</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body class="container">
@@ -14,11 +15,15 @@
         <div class="navbar">
             <img src="./images/LOGO2.png" class="logo" alt="logo">
             <div>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <ul>
-                    <li><a class="letra" href="index.html">INICIO</a></li>
-                    <li><a class="letra" href="./pages/products.html">PRODUCTOS</a></li>
-                    <li><a class="letra" href="./pages/takeaway.html">TAKE AWAY</a></li>
-                    <li><a class="letra" href="./pages/contacts.html">CONTACTANOS</a></li>
+                    <li><a class="letra" href="#">INICIO</a></li>
+                    <li><a class="letra" href="#producto">PRODUCTOS</a></li>
+                    <li><a class="letra" href="./pages/login.html">LOGIN</a></li>
+                    <li><a class="letra" href="#contacto">CONTACTANOS</a></li>
                 </ul>
             </div>
         </div>
@@ -36,20 +41,18 @@
                     <p class="parrafo">Este es un lugar donde además de disfrutar, se comparte una pasión.</p>
                     <br>
                     <div class="button">
-                        <button onclick="document.location='./pages/products.html'" id="boton">¡QUIERO MORIR!</button>
+                        <button onclick="document.location='#producto'"  id="boton">¡QUIERO MORIR!</button>
+                        
                     </div>
                     <br>
                     <br>
-                    <h4 class="titulo">Nuestro origen</h4>
+                    <h4 class="titulo">Nuestro origen:</h4>
                     <br>
                     <p class="parrafo">Surge en el fondo de una casa en el barrio bonaerense de Jose Leon Suarez, por el
                         año 2022 cuando
                         la crisis
-                        <br>
                         de Argentina cada vez, golpeaba mas fuerte, y el mas fuerte tenía que reinventarse.
-                        <br>
                         Comenzando desde unas simples ventas a familiares, hasta convertirse
-
                         en la pesadilla para los Arcos Dorados.
                     </p>
                     <br>
@@ -61,18 +64,15 @@
                     <p class="parrafo">
                         Realizarse chequeos médicos, para la autorización sobre la ingesta
                         <br>
-                        de nuestros alimentos, debido al alto porcentaje calórico
+                        de nuestros alimentos, debido al alto porcentaje calórico.
                     </p>
                 </div>
                 <div class="aside">
                     <img class="fotoaside" src="./images/Mundo-2.png" alt="foto de bob esponja">
                     <p>Nunca revelaremos nuestra fórmula secreta.</p>
                 </div>
-
             </div>
         </section>
-        <br>
-        <br>
         <section class="section22">
             <h2>PORQUE ELEGIRNOS?</h2>
             <br>
@@ -93,8 +93,6 @@
         </section>
         <section>
             <h3 class="slogan">Te vengo a convencer..</h3>
-            <br>
-            <br>
             <div class="section33">
                 <div class="card">
                     <img src="./images/carne-magra.png" alt="carne-magra">
@@ -119,6 +117,25 @@
                     <h4>Le tenes miedo al éxito?</h4>
                     <a href="#">Leer más</a>
                 </div>
+            </div>
+        </section>
+        <section id="producto" class="sectionproducts">
+            <h1>MENÚ</h1>
+            <div class="hamburguesa1">
+                <h3>HAMBURGUESA DEL DIABLO</h3>
+                <img src="../images/hamburguesa-del-diablo.png" alt="hamburguesa del diablo">
+                <p>La famosa carnequeso x5 con un delicioso tocino crocante.</p>
+            </div>
+        </section>
+        <section id="contacto" class="sectionubi">
+            <div class="descr-mapa">
+                <h1>CONTACTO</h1>
+                <h2>Sucursal J.L.Suarez</h2>
+                <p>Nos podes encontrar en Diagonal Jose Leon Suarez 6656.</p>
+                <p>Partido de General San Martín.</p>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.637176029466!2d-58.575180620795244!3d-34.53966014406616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1652412767086!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe]
             </div>
         </section>
     </main>
