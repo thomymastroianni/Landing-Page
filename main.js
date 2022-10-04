@@ -7,7 +7,7 @@ const navbar = document.querySelectorAll('.navbar');
 let ultimoScrollTop;
 
 window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop ;
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > ultimoScrollTop) {
         navbar.style.top = '-200px';
     } else {
@@ -15,7 +15,9 @@ window.addEventListener('scroll', () => {
     }
 
     ultimoScrollTop = scrollTop;
-});
+}); 
+
+// porq no me anda?
 
 
 let products = [];
@@ -84,7 +86,7 @@ const productList = () => {
         return `
         <div class="cart__item">
             <div class="cart__item--content">
-            <img 
+            <img
                 src="${product.img}"
                 alt="pinguino"
                 class="item-img"
@@ -92,7 +94,7 @@ const productList = () => {
             <span>x${product.count}</span>
             <span>(c/u $ ${product.price})</span>
             <p class="cart__title">${product.name}</p>
-            <span class="cart__price">${product.price * product.count}</span>
+            <span class="cart__price"> $ ${product.price * product.count}</span>
             </div>
         </div>
         `;
