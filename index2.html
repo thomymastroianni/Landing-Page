@@ -19,12 +19,13 @@
                     </li>
                     <li>
                         <a class="letra"  href="#MENU">MENU</a>
+                    </li> 
+                     <li >
+                        <a class="letra"  href="./pages/login.html">LOGIN</a>
                     </li>
                     <li>
-                        <a class="letra"  href="#contacto">CONTACTANOS</a>
-                    </li>
-                    <li >
-                        <a class="letra"  href="./pages/login.html">LOGIN</a>
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/favorite-cart.png"/>
+                        <span id="totalItems"></span>
                     </li>
                  </ul>     
          </div>
@@ -39,7 +40,7 @@
                 <p class="parrafosprincipal">Abandonar urgente esta página antes de probar nuestras hamburguesas y hacerte
                 cliente fijo. Este es un lugar donde además de disfrutar, se comparte una pasión.</p>
                 <a href="#MENU">
-                    <button style="color: white; background-color: black; text-align: center; border-radius: 1rem;">¡QUIERO MORIR!</button>
+                    <button style="color: white; background-color: black; text-align: center; border-radius: 1rem; cursor: pointer;">¡QUIERO MORIR!</button>
                 </a>
             </div>
             <div>
@@ -103,25 +104,53 @@
         <section >
             <h1 id="MENU" class="centrado">NUESTRO MENU</h1>
             <div class="conteinerburger">
-                <div class="cardburger" >
+                <div id="1" class="cardburger" >
                     <img class="imgburger" src="./images/simple.webp" alt="">
                     <h5 class="centrado"  >Hamburguesa Simple</h5>
                     <p class="centrado" >$1000</p>
+                    <button class="botonCarrito"
+                    id="btnComprar"
+                    data-img="../images/simple.webp"
+                    data-name="hamburguesa simple"
+                    data-price="1000"
+                    data-count="1"
+                    >COMPRAR</button>
                 </div>
-                <div class="cardburger" >
+                <div id="2" class="cardburger" >
                     <img class="imgburger" src="./images/doble.webp" alt="">
                     <h5 class="centrado"  >Hamburguesa Doble</h5>
                     <p class="centrado"  >$1200</p>
+                    <button class="botonCarrito"
+                    id="btnComprar"
+                    data-img="../images/doble.webp"
+                    data-name="hamburguesa doble"
+                    data-price="1200"
+                    data-count="1"
+                    >COMPRAR</button>
                 </div>
-                <div class="cardburger" >
+                <div id="3" class="cardburger" >
                     <img class="imgburger" src="./images/triple.webp" alt="">
                     <h5 class="centrado" >Hamburguesa Triple</h5>
                     <p class="centrado" >$1400</p>
+                    <button class="botonCarrito"
+                    id="btnComprar"
+                    data-img="../images/triple.webp"
+                    data-name="hamburguesa triple"
+                    data-price="1400"
+                    data-count="1"
+                    >COMPRAR</button>
                 </div>
-                <div class="cardburger" >
+                <div id="4" class="cardburger" >
                     <img class="imgburger" src="./images/superbomba.webp" alt="">
                     <h5 class="centrado">Hamburguesa Super Bomba</h5>
                     <p class="centrado">$1700</p>
+                    <button class="botonCarrito"
+                    id="btnComprar"
+                    data-img="../images/superbomba.webp"
+                    data-name="hamburguesa superbomba"
+                    data-price="1700"
+                    data-count="1"
+                    >COMPRAR</button>
                 </div>
             </div>
         </section>  
@@ -138,6 +167,26 @@
                 </div>
             </div>
         </section>
+        <hr>
+        <section  class="cart__section" id="cartSection">
+            <h2 class="h2_carrito">Carrito Infernal</h2>
+            <div class="cart__container" id="cart">
+                <div class="productoVacio">No hay productos seleccionados</div>
+                <!-- <div class="cart__item">
+                     <div class="cart__item--content">
+                    <p class="cart__title">Metodo de tortura</p>
+                    <span class="cart__price"></span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="total__items">
+                <div class="total__price">
+                    <p class="total">Total:$</p>
+                    <span id="totalProducts"></span>
+                </div>
+                <button class="cart__btn">Finalizar Compra</button>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
@@ -146,5 +195,5 @@
         </div>
     </footer>
 </body>
-
+<script src="main.js"></script>
 </html>
